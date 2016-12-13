@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f6f1ea">
+
+        <Button
+            android:id="@+id/last_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_info_gray_d"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/next_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TableRow>
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/sunday"
+                    android:textColor="@color/text_info_gray_d" />
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/monday"
+                    android:textColor="@color/text_info_gray_d" />
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/thesday"
+                    android:textColor="@color/text_info_gray_d" />
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/wednesday"
+                    android:textColor="@color/text_info_gray_d" />
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/thursday"
+                    android:textColor="@color/text_info_gray_d" />
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/friday"
+                    android:textColor="@color/text_info_gray_d" />
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/saturday"
+                    android:textColor="@color/text_info_gray_d" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

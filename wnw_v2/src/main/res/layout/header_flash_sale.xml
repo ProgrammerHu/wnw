@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?><!--限时抢购列表的头布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleIndicator="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <com.hemaapp.luna_framework.view.CircleIndicator.CircleIndicator
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                CircleIndicator:ci_background="#DDD"
+                CircleIndicator:ci_margin="5dp"
+                CircleIndicator:ci_mode="outside"
+                CircleIndicator:ci_radius="4dp"
+                CircleIndicator:ci_selected_background="@color/main_purple" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_line" />
+
+    <LinearLayout
+        android:id="@+id/layoutTimeDiff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtAction"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="尚未开始！"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/textsize_7" />
+
+            <LinearLayout
+                android:id="@+id/layoutTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="距离本场结束"
+                    android:textColor="@color/black_light"
+                    android:textSize="@dimen/textsize_7" />
+
+                <TextView
+                    android:id="@+id/txtHours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_purple_light_radius_2dp"
+                    android:padding="2dp"
+                    android:text="00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textColor="@color/colorPrimaryLight" />
+
+                <TextView
+                    android:id="@+id/txtMinutes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_purple_light_radius_2dp"
+                    android:padding="2dp"
+                    android:text="00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_7" />
+
+                <TextView
+                    android:id="@+id/txtPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textColor="@color/colorPrimaryLight" />
+
+                <TextView
+                    android:id="@+id/txtSeconds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_purple_light_radius_2dp"
+                    android:padding="2dp"
+                    android:text="00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_7" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_line" />
+    </LinearLayout>
+</LinearLayout>

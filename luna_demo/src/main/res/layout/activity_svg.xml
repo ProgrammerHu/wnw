@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hemaapp.luna_demo.view.SVGPathView
+        android:id="@+id/svgPathView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:svg_color="#00ff00"
+        app:svg_end_path="@string/svg_menu"
+        app:svg_paint_width="5"
+        app:svg_start_path="@string/svg_back"
+        app:svg_view_height="100"
+        app:svg_view_width="100" />
+
+</RelativeLayout>

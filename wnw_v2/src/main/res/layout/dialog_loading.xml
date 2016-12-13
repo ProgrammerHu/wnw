@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!--加载中-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_white_cirlce"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageCircle"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_margin="6dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_loading_circel" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_loading" />
+</FrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/father"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:background="@drawable/bg_click_layout"
+    android:orientation="vertical">
+
+    <com.hemaapp.hm_FrameWork.view.RoundedImageView
+        android:id="@+id/imageView"
+        android:layout_width="110dp"
+        android:layout_height="83dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_grey_border_radius"
+        android:padding="0.5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_default_rectangle" />
+
+
+</LinearLayout>

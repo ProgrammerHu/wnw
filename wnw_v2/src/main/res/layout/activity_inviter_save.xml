@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><!--修改联系人-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_image_title_next" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_white_border_grey_radius_5dp"
+        android:digits="0123456789"
+        android:gravity="center_vertical"
+        android:hint="只能修改一次邀请人"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:textColor="@color/black_light"
+        android:textColorHint="@color/grey_text"
+        android:textSize="@dimen/textsize_8" />
+</LinearLayout>

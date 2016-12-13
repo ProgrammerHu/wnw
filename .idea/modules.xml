@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bdintegrationsdk_libproject/bdintegrationsdk_libproject.iml" filepath="$PROJECT_DIR$/bdintegrationsdk_libproject/bdintegrationsdk_libproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hm_framework/hm_framework.iml" filepath="$PROJECT_DIR$/hm_framework/hm_framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/luna_demo/luna_demo.iml" filepath="$PROJECT_DIR$/luna_demo/luna_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/luna_framework/luna_framework.iml" filepath="$PROJECT_DIR$/luna_framework/luna_framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my_richeditor/my_richeditor.iml" filepath="$PROJECT_DIR$/my_richeditor/my_richeditor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/onekeyshare/onekeyshare.iml" filepath="$PROJECT_DIR$/onekeyshare/onekeyshare.iml" />
+      <module fileurl="file://$PROJECT_DIR$/richeditor/richeditor.iml" filepath="$PROJECT_DIR$/richeditor/richeditor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharesdk/sharesdk.iml" filepath="$PROJECT_DIR$/sharesdk/sharesdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wnw.iml" filepath="$PROJECT_DIR$/wnw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wnw_v2/wnw_v2.iml" filepath="$PROJECT_DIR$/wnw_v2/wnw_v2.iml" />
+    </modules>
+  </component>
+</project>

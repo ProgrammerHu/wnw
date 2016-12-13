@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><!--海外优品列表元素-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hemaapp.hm_FrameWork.view.RoundedImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/image_main_temp" />
+</LinearLayout>

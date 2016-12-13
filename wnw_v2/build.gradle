@@ -1,0 +1,115 @@
+apply plugin: 'com.android.application'
+
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.hemaapp.wnw"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 2010
+//        versionName "1.0.1.0"
+        versionName "2.0.1.0"
+
+        // dex突破65535的限制
+//        multiDexEnabled true
+    }
+    signingConfigs {
+        // your debug keystore
+        debug{
+            keyAlias 'hm_wnw'
+            keyPassword '123456Aa'
+            storePassword '123456Aa'
+            storeFile file("hm_wnw.keystore")
+        }
+    }
+    buildTypes {
+        release {
+            // 移除无用的resource文件
+            shrinkResources true
+
+            //打包要混淆，此处有风险，混淆需谨慎
+            minifyEnabled false
+            //加载默认混淆文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            //设置打包出的文件名
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        //输出apk名称为boohee_v1.0_2015-01-15_wandoujia.apk
+//                        def fileName = "Micro_Queen_v${defaultConfig.versionName}_${releaseTime()}${variant.productFlavors[0].name}.apk"
+                        def fileName = "Micro_Queen_v${defaultConfig.versionName}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+
+        }
+        debug {
+            // 移除无用的resource文件
+            shrinkResources true
+            minifyEnabled false
+        }
+    }
+/*    splits {//适应x86架构的处理器的设备，比如模拟器
+        abi {
+            enable true
+            reset()
+            include 'x86', 'armeabi-v7a'
+            universalApk true
+        }
+    }*/
+    productFlavors {
+        //多渠道打包使用
+        _test {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "_test"]
+        }
+        _main {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "_main"]
+        }
+        _360 {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "_360"]
+        }
+        _baidu {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "_baidu"]
+        }
+        _anzhi {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "_anzhi"]
+        }
+        _tencent {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "_tencent"]
+        }
+
+
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+//    dexOptions {
+//        maxProcessCount 4//最大线程数量
+//        incremental true
+//        javaMaxHeapSize "2g"
+//    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    /*引用Module开始*/
+    compile project(':onekeyshare')
+//    compile project(':bdintegrationsdk_libproject')
+    compile project(':luna_framework')
+    compile project(':my_richeditor')
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.2'
+}

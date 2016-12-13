@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">@color/main_purple</item>
+        <!--<item name="colorPrimaryDark">@color/main_purple</item>-->
+        <item name="colorPrimaryDark">#1B222C</item>
+        <item name="colorAccent">@color/main_purple</item>
+    </style>
+
+    <style name="AliPayTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">#1B222C</item>
+    </style>
+
+    <style name="UnionPayTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">#5AA3D8</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+    <style name="BlackTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/black</item>
+    </style>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+
+    <style name="mProgress_circle">
+        <item name="android:minWidth">25dp</item>
+        <item name="android:minHeight">25dp</item>
+        <item name="android:maxWidth">30dp</item>
+        <item name="android:maxHeight">30dp</item>
+    </style>
+
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/room_rating_bar</item>
+        <item name="android:minHeight">15dp</item>
+        <item name="android:maxHeight">15dp</item>
+    </style>
+
+    <style name="roomRatingBarBig" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/room_rating_bar_big</item>
+        <item name="android:minHeight">25.5dp</item>
+        <item name="android:maxHeight">25.5dp</item>
+    </style>
+</resources>

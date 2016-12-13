@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hemaapp.wnw.view.ScrollLinerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/imageCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/icon_checkbox" />
+
+            <FrameLayout
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_white_border"
+                android:padding="0.5dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo_default_square" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="NAME"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_8" />
+
+                <TextView
+                    android:id="@+id/txtSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="S码/红色"
+                    android:textSize="@dimen/textsize_7" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:text="￥"
+                        android:textColor="@color/red_price"
+                        android:textSize="@dimen/textsize_7" />
+
+                    <TextView
+                        android:id="@+id/txtPrize"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:paddingBottom="10dp"
+                        android:singleLine="true"
+                        android:text="266.3"
+                        android:textColor="@color/red_price"
+                        android:textSize="@dimen/textsize_8" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageLess"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:src="@drawable/icon_less" />
+
+                        <TextView
+                            android:id="@+id/txtCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/bg_white_border"
+                            android:gravity="center"
+                            android:minWidth="30dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textsize_7" />
+
+                        <ImageView
+                            android:id="@+id/imageMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingRight="15dp"
+                            android:src="@drawable/icon_more" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_line" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtDelete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/main_purple"
+        android:contentDescription="@null"
+        android:gravity="center"
+        android:padding="7dip"
+        android:scaleType="center"
+        android:text="删除"
+        android:textColor="#FFF"
+        android:textSize="@dimen/textsize_8" />
+
+</com.hemaapp.wnw.view.ScrollLinerLayout>

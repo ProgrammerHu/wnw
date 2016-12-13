@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="alpha">#E0000000</color>
+    <color name="colorPrimary">#6361a1</color>
+    <color name="colorPrimaryDark">#4f4d8b</color>
+    <color name="colorPrimaryLight">#9492c4</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="grey_line">#e7e7e7</color>
+    <color name="grey_line_light">#e5e5e5</color>
+    <color name="grey_light">#e2dede</color>
+    <color name="grey_text">#919191</color>
+    <color name="main_blue">#00a1d8</color>
+    <color name="main_orange">#ff4400</color>
+    <color name="main_purple">#6361a1</color>
+    <color name="main_purple_dark">#4f4d8b</color>
+    <color name="main_purple_light">#9492c4</color>
+    <color name="main_purple_light_light">#acaad1</color>
+    <color name="background_click">#EEE</color>
+    <color name="background">#f6f6f6</color>
+    <color name="black">#3b3b3b</color>
+    <color name="black_light">#3b3b3b</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="yellow">#FF4141</color>
+
+    <color name="purple_red">#cf64da</color>
+    <color name="orange_yellow">#eab102</color>
+    <color name="red_price">#e9161c</color>
+
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?><!--粉丝排行榜之后商品列表的头布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.hemaapp.hm_FrameWork.view.RoundedImageView
+            android:id="@+id/imageHead"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_cirle_image_border_small"
+            android:padding="3dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_register_head" />
+
+        <TextView
+            android:id="@+id/txtNickname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/textsize_8" />
+
+        <TextView
+            android:id="@+id/txtMatching"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:text="匹配值"
+            android:textColor="@color/grey_text"
+            android:textSize="@dimen/textsize_7" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey_line" />
+</LinearLayout>

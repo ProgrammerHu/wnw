@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><!--我的商品顶部的全部分类-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtAllClassification"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_click_layout"
+        android:gravity="center"
+        android:text="全部分类(0)"
+        android:textColor="@color/black_light"
+        android:textSize="@dimen/textsize_8" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/background" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_line" />
+</LinearLayout>

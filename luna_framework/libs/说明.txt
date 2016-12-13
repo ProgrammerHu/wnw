@@ -1,0 +1,17 @@
+支付宝相关jar包
+		alipaySdk-20151215.jar
+		
+银联相关jar包及镜像文件
+		UpdateLib_2.0.9.jar
+		UPPayAssistEx.jar
+		UPPayPluginExStd.jar
+		libentryexstd.so
+		
+微信支付相关jar包
+		libammsdk.jar
+
+个推推送jar包及镜像文件
+        GetuiExt-2.0.3.jar
+        GetuiSDK2.8.1.0.jar
+        json_simple-1.1.jar
+        libgetuiext.so

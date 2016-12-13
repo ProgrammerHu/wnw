@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="title_hui">#959595</color>
+    <color name="city_sel">#a0a0a0</color>
+    <color name="shop_hui1">#727272</color>
+    <color name="shop_hui2">#535353</color>
+    <color name="map_pop_sel">#f1f1f1</color>
+    <color name="empty">#a0a0a0</color>
+    <color name="type_normal">#9d9d9d</color>
+    <color name="qianhui">#b8b8b8</color>
+    <color name="hui">#979797</color>
+    <color name="shenhui">#777777</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#c0000000</color>
+    <color name="possible_result_points">#c0F15C3B</color>
+    <color name="zise">#F15C3B</color>
+    <color name="scan_hui">#9B9B9B</color>
+    <color name="notice_hui">#424242</color>
+    <color name="green">#46D9BF</color>
+
+
+    <color name="text_info_gray_h">#D4D4D4</color>
+    <color name="text_info_gray_d">#666666</color>
+    <color name="text_info_gray_g">#9a9a9a</color>
+    <color name="text_info_orange">#ff8f68</color>
+</resources>

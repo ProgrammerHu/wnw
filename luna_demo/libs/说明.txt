@@ -1,0 +1,6 @@
+
+高德地图相关jar包及镜像文件
+		AMap_Location_v2.4.1.jar (若项目自需要定位功能,只导入该jar包即可)
+		Android_Map_V3.0.jar
+		MapApiServices_V3.0.jar
+		libgdamapv4sdk736.so和libgdamapv4sdk736ex.so

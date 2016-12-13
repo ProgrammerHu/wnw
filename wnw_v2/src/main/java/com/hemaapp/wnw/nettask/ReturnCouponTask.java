@@ -1,0 +1,44 @@
+package com.hemaapp.wnw.nettask;
+
+import com.hemaapp.hm_FrameWork.result.HemaArrayResult;
+import com.hemaapp.wnw.MyHttpInformation;
+import com.hemaapp.wnw.MyNetTask;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
+
+import xtom.frame.exception.DataParseException;
+
+/**
+ * 抵用券接口
+ * Created by HuHu on 2016/4/1.
+ */
+public class ReturnCouponTask extends MyNetTask {
+    public ReturnCouponTask(MyHttpInformation information, HashMap<String, String> params) {
+        super(information, params);
+    }
+
+    @Override
+    public Object parse(JSONObject jsonObject) throws DataParseException {
+        return new Result(jsonObject);
+    }
+
+    private class Result extends HemaArrayResult<Integer> {
+
+        public Result(JSONObject jsonObject) throws DataParseException {
+            super(jsonObject);
+        }
+
+        @Override
+        public Integer parse(JSONObject jsonObject) throws DataParseException {
+            try {
+                return jsonObject.getInt("return");
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            return 0;
+        }
+    }
+}

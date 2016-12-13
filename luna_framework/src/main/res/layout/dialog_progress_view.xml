@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cornerbg_white_single"
+    android:gravity="center"
+    android:minWidth="150dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.hemaapp.luna_framework.view.ProgressView
+        android:id="@+id/progressView"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        app:color_inside="?colorPrimaryDark"
+        app:color_out="?colorPrimary"
+        app:max_angel="250"
+        app:width_inside="10"
+        app:width_out="15" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="请稍后"
+        android:textSize="@dimen/textsize_9" />
+
+</LinearLayout>
